@@ -15,7 +15,7 @@ let item_7_type = typeof(item_7); // ex.23-24
 // console.log(item_3 + item_4);  //ex.13
 // console.log(item_3 * item_4);  //ex.14
 // console.log(("item_6 ==" + item_6) + (", ") + ("item_6_type ==" + item_6_type));  //ex.21
-console.log(("item_7 ==" + item_7) + (", ") + ("item_7_type ==" + item_7_type));  //ex.25
+//console.log(("item_7 ==" + item_7) + (", ") + ("item_7_type ==" + item_7_type));  //ex.25
 
 
 let age_1 = 10; // ex.26
