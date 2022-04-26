@@ -1,20 +1,20 @@
 // 1. Написать скриптик, который сосчитает и выведет результат от возведения 2 в степень 10, начиная со степени 1
 
-// let result = 1;
-// let step = 1;
+let result = 1;
+let step = 1;
 
-// while (step <= 10){
-//     result = 2 ** step;
-//     step++;
-//     console.log(result)
-// }
+while (step <= 10){
+    result = 2 ** step;
+    step++;
+    console.log(result)
+}
 
 // // 1*. Преобразовать 1 задачу в функцию, принимающую на вход степень, в которую будет возводиться число 2
 
-// const result_f = (step) => {
-//     return 2 ** step
-// }
-// console.log(result_f(8));
+const result_f = (step) => {
+    return 2 ** step
+}
+console.log(result_f(8));
 
 // 2. Написать скрипт, который выведет 5 строк в консоль таким образом, чтобы в первой строчке выводилось :), во второй :):) и так далее
 // Пример в консоли:
@@ -24,12 +24,12 @@
 // :):):):)
 // :):):):):)
 
-// let i = 0;
-// let sm = '';
-// while (i < 5){
-//     i++;
-//     console.log(sm+=':)')
-//}
+let i = 0;
+let sm = '';
+while (i < 5){
+    i++;
+    console.log(sm+=':)')
+}
 
 
 
@@ -37,15 +37,15 @@
 //а также количество строк для вывода 
 // e.g. function printSmile(stroka, numberOfRows)
 
-// const printSmile = (stroka, numberOfRows) => {
-//     let i = 1;
+const printSmile = (stroka, numberOfRows) => {
+    let i = 1;
 
-//     while (i < numberOfRows){
-// i++;
-// console.log(stroka+=':)')
-//     }
-// }
-//  printSmile(':)',5);
+    while (i < numberOfRows){
+i++;
+console.log(stroka+=':)')
+    }
+}
+ printSmile(':)',5);
 
 
 // 3**.  Написать функцию, которая принимает на вход слово. Задача функции посчитать и вывести в консоль, сколько в слове гласных, и сколько согласных букв.
@@ -95,10 +95,10 @@ const isPalindrom = (str) => {
     //console.log(i)
   }
 if (str == result){
-  console.log(str, "- is Palindrom");
+  console.log(result, "- is Palindrom");
 }else{
   console.log(str, " - is not Palindrom");
 }
 }
-console.log(isPalindrom("hello"));
+console.log(isPalindrom("abba"));
 
