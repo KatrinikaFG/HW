@@ -9,12 +9,22 @@ while (step <= 10){
     console.log(result)
 }
 
+
+
 // // 1*. Преобразовать 1 задачу в функцию, принимающую на вход степень, в которую будет возводиться число 2
 
 const result_f = (step) => {
-    return 2 ** step
+  let result = 1;
+  let steper = 1;
+  while (steper <= step){
+    result = 2 ** steper;
+    steper++;
+    console.log(result)
 }
-console.log(result_f(8));
+}
+result_f(5);
+  
+  
 
 // 2. Написать скрипт, который выведет 5 строк в консоль таким образом, чтобы в первой строчке выводилось :), во второй :):) и так далее
 // Пример в консоли:
@@ -40,12 +50,12 @@ while (i < 5){
 const printSmile = (stroka, numberOfRows) => {
     let i = 1;
 
-    while (i < numberOfRows){
+    while (i < numberOfRows+1){
 i++;
 console.log(stroka+=':)')
     }
 }
- printSmile(':)',5);
+ printSmile('',5);
 
 
 // 3**.  Написать функцию, которая принимает на вход слово. Задача функции посчитать и вывести в консоль, сколько в слове гласных, и сколько согласных букв.
@@ -58,23 +68,20 @@ console.log(stroka+=':)')
 const getWordStructure = (word) => {
   let countV = 0;
   let countC = 0;
-  
- // const vowels = ['a', 'A', 'e',  'i', 'o', 'u', 'y'];
-  //const consom = ['q', 'w', 'r', 't', 'p', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c C', 'v', 'b', 'n','m'];
 
   for (let i = 0; i < word.length;i++ ){
-    
-      if("eyuioaEYUIOA".indexOf(word[i]) != -1){
+    registr = word.toLowerCase();
+      if("eyuioa".indexOf(registr[i]) != -1){
         countV++;
         
-      }else if ("qwrtpsdfghjklzxcvbnmQWRTPSDFGHJKLZXCVBNM".indexOf(word[i]) != -1){
+      }else if ("qwrtpsdfghjklzxcvbnm".indexOf(registr[i]) != -1){
         countC++;
       }
     }
       console.log("Слово " + word + " состоит из " + countV + " гласных и " + countC + " согласных букв"); 
   
 }
-  getWordStructure('Check-list');
+  getWordStructure('Check-liAst');
 
 
 // 4**. Написать функцию, которая проверяет, является ли слово палиндромом
@@ -86,19 +93,17 @@ const getWordStructure = (word) => {
 const isPalindrom = (str) => {
   let i = str.length -1; 
   let result = "";
-
+  registr = str.toLowerCase();
   while (i >= 0){
     
-    result = result + str[i];
+    result = result + registr[i];
     i--;
-   
-    //console.log(i)
   }
-if (str == result){
+if (registr === result){
   console.log(result, "- is Palindrom");
 }else{
   console.log(str, " - is not Palindrom");
 }
 }
-console.log(isPalindrom("abba"));
+isPalindrom("Abba");
 

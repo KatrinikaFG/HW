@@ -1,9 +1,8 @@
-const printSmile = (stroka, numberOfRows) => {
-    let i = 1;
+let result = 1;
+let step = 1;
 
-    while (i < numberOfRows){
-i++;
-console.log(stroka+=':)')
-    }
+while (step <= 10){
+    result = 2 ** step;
+    step++;
+    console.log(result)
 }
- printSmile(':)',5);
