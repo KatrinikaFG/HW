@@ -1,14 +1,22 @@
 // 1. Написать скриптик, который сосчитает и выведет результат от возведения 2 в степень 10, начиная со степени 1
 
+// let result = 1;
+// let step = 1;
+
+// while (step <= 10){
+//     result = 2 ** step;
+//     step++;
+//     console.log(result)
+// }
+
 let result = 1;
 let step = 1;
 
 while (step <= 10){
-    result = 2 ** step;
+    result = result * 2;
     step++;
     console.log(result)
 }
-
 
 
 // // 1*. Преобразовать 1 задачу в функцию, принимающую на вход степень, в которую будет возводиться число 2
@@ -17,7 +25,7 @@ const result_f = (step) => {
   let result = 1;
   let steper = 1;
   while (steper <= step){
-    result = 2 ** steper;
+    result = result * 2;
     steper++;
     console.log(result)
 }
