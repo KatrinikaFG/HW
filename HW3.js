@@ -108,7 +108,7 @@ const isPalindrom = (str) => {
     i--;
   }
 if (registr === result){
-  console.log(result, "- is Palindrom");
+  console.log(str, "- is Palindrom");
 }else{
   console.log(str, " - is not Palindrom");
 }
